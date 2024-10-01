@@ -1,0 +1,159 @@
+.main-rank {
+  margin-inline: 2rem;
+}
+
+.rank-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.rank-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border-bottom: var(--border);
+  gap: 2rem 0.3rem;
+}
+
+.rank-row h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.rank-img {
+  margin-inline: 0.5rem;
+  width: 4rem;
+}
+
+.points {
+  margin-left: auto;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--cor-principal);
+}
+
+.ranking-title-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 1.3rem;
+  margin-top: 0.5rem;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.ranking-title-div h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.btn-icon-left,
+.btn-icon-right {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btn-icon-left:hover,
+.btn-icon-right:hover {
+  color: var(--cor-principal);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .main-rank {
+    margin: 0;
+    padding: 1rem;
+  }
+  .rank-header {
+    flex-direction: column;
+  }
+
+  .rank-row {
+    text-align: center;
+    padding: 10px;
+    gap: 1rem;
+  }
+  .rank-row h2 {
+    font-size: 1.3rem;
+  }
+
+  .rank-img {
+    width: 3rem;
+  }
+
+  .points {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .ranking-title-div {
+    justify-content: space-between;
+    padding-top: 3rem;
+  }
+
+  .ranking-title-div h2 {
+    font-size: 2rem;
+    flex: 1;
+    text-align: center;
+    margin: 0 1rem;
+  }
+
+  .btn-icon-left,
+  .btn-icon-right {
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rank-row {
+    padding: 8px;
+    gap: 0.5rem;
+  }
+
+  .rank-img {
+    width: 2.5rem;
+  }
+
+  .ranking-title-div {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .ranking-title-div h2 {
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    flex: 0 1 auto;
+  }
+
+  .btn-icon-left,
+  .btn-icon-right {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  .progresso-bar {
+    width: 100%;
+  }
+
+  .progresso-texto {
+    font-size: 1rem;
+  }
+
+  .desafio-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-desafio {
+    width: 100%;
+    text-align: center;
+  }
+}

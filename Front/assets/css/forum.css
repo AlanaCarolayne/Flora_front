@@ -1,0 +1,255 @@
+.posts {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 5rem;
+}
+
+.post {
+  border-top: var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.post-header {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.post-name {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.post-level {
+  font-size: 1rem;
+  color: var(--cor-destaque);
+}
+
+.post-time {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.post-btns {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.filter-div {
+  padding: 1.5rem;
+  margin-right: 3rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.post-btn-follow,
+.post-btn-like,
+.post-btn-comment,
+.post-btn-filter {
+  background-color: transparent;
+  border: 1.5px solid var(--cor-principal);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  color: var(--cor-destaque);
+  cursor: pointer;
+  transition: 0.3s ease;/
+}
+
+.post-btn-follow:hover,
+.post-btn-like:hover,
+.post-btn-comment:hover,
+.post-btn-filter:hover {
+  border-color: var(--cor-destaque);
+  background-color: var(--cor-principal);
+  color: #000;
+}
+
+.post-btn-follow {
+  justify-content: flex-end;
+  margin-left: 20rem;
+}
+
+.icon-post {
+  margin-left: 0.5rem;
+  margin-right: .5rem;
+  text-align: center;
+  background-color: transparent;
+}
+
+.post-img {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-text {
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.post-btn,
+.post-btn-mobile {
+  border: var(--border);
+  background-color: var(--cor-principal);
+  color: black;
+  transition: 0.5s ease;
+  padding: .8rem 1rem;
+  border-radius: 2rem;
+  margin-left: 3rem;
+}
+
+.post-btn:hover,
+.post-btn-mobile:hover {
+  background-color: transparent;
+  border: 2px solid var(--cor-principal);
+}
+
+.show-comments-btn {
+  border: none;
+  color: var(--cor-destaque);
+  font-size: .8rem;
+  transition: color .3s ease;
+}
+
+.show-comments-btn:hover {
+  color: var(--cor-principal);
+  text-decoration: underline;
+}
+
+.comment-post {
+  border-top: var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.5rem;
+  padding: .5rem;
+  display: block;
+}
+
+.post-input-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  /* display: none; */
+}
+
+.post-input-form input,
+.post-input-form button {
+  border: 1px solid #3b3b3b71;
+  padding: 0.4rem;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+.post-input-form input {
+  width: 80%;
+  margin: auto;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.post-input-form button {
+  margin-inline-start: -7.9rem;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.header-comment-post {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-comment-post img {
+  width: 2.5rem;
+  height: auto;
+}
+
+.header-comment-post h5 {
+  font-size: 1rem;
+}
+
+.comment-post p {
+  font-size: .9rem;
+  margin-left: 3.5rem;
+}
+.post-btn-mobile {
+  font-size: 1rem;
+  clip-path: circle(50%);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  position: fixed; 
+    top: 35rem; 
+    right: 1rem; 
+  z-index: 1000;
+  display: none;  
+}
+
+
+@media (max-width: 64rem) {
+  .post-btn-follow {
+    margin-left: 15rem;
+  }
+  .post-btn-mobile{
+    display: block;
+  }
+}
+  /* Responsividade */
+  @media (max-width: 48rem) {
+
+    .main-forum {
+      width: 100%;
+    }
+
+    .post {
+      width: 100%;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    .post-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    .post-btns {
+      justify-content: space-around;
+      gap: 1rem;
+    }
+
+    .post-img {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+
+    .filter-div {
+      margin-right: 0;
+      margin-top: 2rem;
+    }
+
+    .post-btn-follow {
+      margin-left: 1.1rem;
+    }
+  }
+

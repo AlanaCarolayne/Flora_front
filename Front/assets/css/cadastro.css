@@ -1,0 +1,164 @@
+body {
+  font-size: 1rem;
+}
+
+.register-container {
+  margin: 0;
+  max-width: 90rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--background-color);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.register-image {
+  flex: 1;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.register-image img {
+  width: 18rem;
+  height: auto;
+}
+
+.register-text {
+  text-align: center;
+}
+
+.register-text h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.register-text h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-top: 0.625rem;
+  font-weight: 300;
+}
+
+.register-form {
+  flex: 1.5;
+  background: linear-gradient(180deg, var(--cor-principal), var(--cor-destaque));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 6rem;
+}
+
+.form-div {
+  width: 100%;
+  max-width: 40rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  border: 1px solid #e0e0e0;
+  backdrop-filter: blur(10px);
+}
+
+.register-form h3 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.register-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 0;
+}
+
+.alert-password {
+  font: 0.5rem;
+  color: #d41616;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.div-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+/* Responsividade */
+@media (min-width: 90rem) {
+  .register-container {
+    padding: 4rem;
+  }
+
+  .register-image img {
+    width: 24rem;
+  }
+
+  .register-form {
+    padding: 4rem 8rem;
+  }
+}
+
+@media (max-width: 64rem) {
+  .register-container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .register-form {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .form-div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 48rem) {
+  .register-container {
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .register-image {
+    padding: 1rem;
+  }
+
+  .register-image img {
+    width: 14rem;
+  }
+
+  .register-form {
+    width: 100%;
+    padding: 1rem; 
+  }
+
+  .form-div {
+    width: 100%;
+    padding: 1rem;
+    box-shadow: none;
+    border: none; 
+  }
+
+  .register-form button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}

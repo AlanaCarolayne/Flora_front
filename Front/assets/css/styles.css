@@ -1,0 +1,42 @@
+:root{
+    --fonte-principal: "Nunito", sans-serif;
+    --fonte-destaque: "Tangerine", cursive;
+    --cor-principal: #D72C5C;
+    --cor-destaque: #68182E;
+    --background-color: #ffeff8;
+    --border: solid .5px #80808031;
+}
+*{
+    font-family: var(--fonte-principal);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.body{
+    width: 100%;
+    height: auto;
+}
+.div-content{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 17rem; 
+    padding-top: 6rem; 
+    padding-right: 2rem; 
+    
+}
+@media (max-width: 64rem) {
+.div-content{
+    margin-left: 12rem; 
+}
+}
+
+@media (max-width: 48rem) {
+.div-content{
+    display: unset;
+    padding: 3rem;
+}
+}

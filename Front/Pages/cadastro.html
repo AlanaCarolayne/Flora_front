@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flora - Cadastro</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/flora_ico.ico"
+      type="image/x-icon"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/imports.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Glegoo&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="register-container">
+      <section class="register-image">
+        <img src="../assets/images/flora_logo.png" alt="Logo da Flora" />
+        <div class="login-text">
+          <h2>Junte-se ao <span>Flora</span></h2>
+          <h3>Cadastre-se e comece sua jornada como consultora Natura</h3>
+        </div>
+      </section>
+      <section class="register-form">
+        <div class="form-div">
+          <h3>Crie sua conta</h3>
+
+          <form id="form-cadastro">
+            <label for="name">Nome:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Seu nome"
+              class="name-last-name"
+              maxlength="100"
+            />
+            <label for="last-name">Sobrenome:</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              required
+              placeholder="Seu sobrenome"
+              class="name-last-name"
+              maxlength="100"
+            />
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Seu e-mail"
+              maxlength="200"
+              required
+            />
+            <label for="password">Senha:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Crie uma senha"
+              required
+            />
+            <label for="confirm-password">Confirmar Senha:</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              placeholder="Confirme sua senha"
+              required
+            />
+            <p class="alert-password" id="cadastro-alert-password ">
+              As senhas não são compatíveis.
+            </p>
+            <label for="username">Nome de usuário:</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              required
+              placeholder="Escolha um nome de usuário"
+            />
+            <label for="selectBox">Você é uma consultora nível: </label>
+            <select name="selectBox" id="selectBox" class="selectBox-cadastro">
+              <option value="selectNivel" selected disabled>
+                Selecione seu nível
+              </option>
+              <option value="semente">Semente</option>
+              <option value="bronze">Bronze</option>
+              <option value="prata">Prata</option>
+              <option value="ouro">Ouro</option>
+              <option value="diamante">Diamante</option>
+            </select>
+            <button type="submit">Cadastrar</button>
+            <p class="signup-prompt">
+              Já tem uma conta?
+              <a href="index.html">Acesse sua conta!</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script src="../assets/js/src/server.js"></script>
+  <script src="../assets/js/src/registrer.js"></script>
+  <script src="../assets/js/src/login.js"></script>
+  <script src="../assets/js/src/formMessage.js"></script>
+  <script src="../assets/js/src/createMessages.js"></script>
+  <script  src="../assets/js/src/trilha.js"></script>
+  <script  src="../assets/js/src/game.js"></script>
+  <script  src="../assets/js/src/ranking.js"></script>
+</html>

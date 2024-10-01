@@ -1,0 +1,59 @@
+.aside {
+  flex: 0 0 23%;
+  border-right: var(--border);
+  margin-left: -1.8rem;
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  width: 23%;
+  height: 100vh;
+  z-index: 999;
+  padding: 1.5rem;
+  overflow-y: auto;
+  display: block;
+
+}
+.aside-menu {
+  padding: 1.5rem;
+}
+.menu-list {
+  list-style: none;
+}
+.menu-item {
+  margin-bottom: 2rem;
+}
+.menu-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--cor-destaque);
+  transition: 0.5s ease;
+ 
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: #000;
+  background-color: var(--cor-principal);
+  padding: 0.7rem;
+  border-radius: 1rem;
+}
+.icon-menu {
+  margin-right: 0.5rem;
+  background-color: transparent;
+}
+
+/* Estilo para telas menores */
+@media (max-width: 48rem) {
+  .aside {
+    position: fixed;
+    top: 0;
+    left: -100%; 
+    width: 70%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1000;
+    transition: left 0.3s ease; 
+    padding: 1rem;
+  }
+
+
+}
