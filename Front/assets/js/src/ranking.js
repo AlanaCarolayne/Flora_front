@@ -1,6 +1,5 @@
 userLogin = JSON.parse(localStorage.getItem("userLogado"));
 users = JSON.parse(localStorage.getItem("users"));
-console.log(userLogin.pontosRanking);
 
 const title = document.querySelector("#ranking-title");
 const rankingRow = document.querySelector("#rank-header");

@@ -23,7 +23,6 @@ form.addEventListener("submit", (e) => {
     };
 
     users.push(newUser);
-    console.log("Usuário cadastrado com sucesso:", users);
     document.querySelector(".alert-password").style.display = "none";
 
     try {
@@ -40,5 +39,4 @@ form.addEventListener("submit", (e) => {
 
 window.addEventListener("load", () => {
   users = JSON.parse(localStorage.getItem("users")) || [];
-  console.log("Usuários carregados do localStorage:", users);
 });

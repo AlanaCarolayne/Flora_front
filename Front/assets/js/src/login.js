@@ -1,6 +1,5 @@
 
 const formLogin = document.querySelector("#form-login");
-console.log(users);
 formLogin.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -19,7 +18,6 @@ formLogin.addEventListener("submit", (e) => {
         feedback.textContent = "Senha incorreta. Verifique novamente";
     } else {
         feedback.style.display = "none";
-        console.log("Usuário logado com sucesso: " + userLogado);
 
         localStorage.setItem('userLogado', JSON.stringify(userLogado));
         window.location.href = "forum.html";

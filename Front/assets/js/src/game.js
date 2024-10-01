@@ -26,7 +26,6 @@ const handleButtonClick = (nivel, btnNivel) => {
       if (btnAlternative.textContent === nivel.correta) {
         let pontos = Math.floor(Math.random() * 5) + 1;
         userLogin.pontosRanking = (userLogin.pontosRanking || 0) + pontos;
-        console.log(userLogin.pontosRanking);
         users = users.map((user) =>
           user.email === userLogin.email
             ? { ...user, pontosRanking: userLogin.pontosRanking }
@@ -55,7 +54,6 @@ const handleButtonClick = (nivel, btnNivel) => {
 
         modalParabens.show();
       } else {
-        console.log("burro");
         const modal = bootstrap.Modal.getInstance(
           document.querySelector("#modal1")
         );
@@ -81,7 +79,6 @@ trilhasGame.forEach((trilha) => {
     btnNivel.setAttribute("data-bs-toggle", "modal");
     btnNivel.setAttribute("data-bs-target", "#modal1");
 
-  console.log(userLogin);
     btnMap.set(nivel.id_nivel, btnNivel);
 
     btnNivel.addEventListener("click", () =>
