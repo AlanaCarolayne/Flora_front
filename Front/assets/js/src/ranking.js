@@ -18,7 +18,7 @@ filteredUsers.forEach((user, index) => {
   rankingRow.innerHTML += `
     <div class="rank-row">
       <h2 style="margin-left: 1vw;">${index + 1}°</h2>
-      <img src="../assets/images/user.png" alt="User" class="rank-img" style="margin-left: 1vw;">
+      <img src="../Front/assets/images/user.png" alt="User" class="rank-img" style="margin-left: 1vw;">
       <h2 style="margin-left: 1vw;">${user.nome}</h2>
       <h4 class="points">${user.pontosRanking || 0} pontos</h4>
     </div>`;

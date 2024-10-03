@@ -7,7 +7,7 @@ function createPost(nome, mensagem, idMensagem, nivel) {
 
   <div class="post-header">
     <div class="post-info">
-      <img src="../assets/images/user.png" alt="User" class="post-img">
+      <img src="../Front/assets/images/user.png" alt="User" class="post-img">
       <div>
         <a href= "perfilConsultora.html"class="post-name">${nome}</a>
         <h4 class="post-level">Consultora ${nivel}</h4>
@@ -61,7 +61,7 @@ function createComment(nome, comentario) {
   comment.classList.add("comment-post");
   comment.innerHTML = `
         <div class="header-comment-post">
-          <img src="../assets/images/user.png" alt="Imagem do usuário">
+          <img src="../Front/assets/images/user.png" alt="Imagem do usuário">
           <h5>${nome}</h5>
         </div>
         <p>${comentario}</p>

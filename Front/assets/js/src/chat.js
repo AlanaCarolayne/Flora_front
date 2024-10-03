@@ -88,7 +88,7 @@ users.forEach(user => {
     const button = document.createElement('button');
     button.classList.add('chat-list-item');
     button.innerHTML = ` 
-      <img src="../assets/images/user.png" alt="user">
+      <img src="../Front/assets/images/user.png" alt="user">
       <div class="chat-list-info">
         <h4>${user.nome}</h4>
         <p>Converse com ${user.nome}</p>

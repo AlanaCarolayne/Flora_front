@@ -191,24 +191,24 @@ margin-bottom: 1.5rem;
   width: 3rem;
   height: 3rem;
   position: fixed; 
-    top: 33rem; 
-    right: 1rem; 
+  top: 80%; 
+  right: 3rem; 
   z-index: 1000;
   display: none;  
 }
 
 
-@media (min-width: 65rem) {
+@media (max-width: 64rem) {
   .post-btn-follow {
     margin-left: 15rem;
   }
-  .post-btn-mobile{
-    display: block;
-  }
+
 }
   /* Responsividade */
   @media (max-width: 48rem) {
-
+    .post-btn-mobile{
+      display: block;
+    }
     .main-forum {
       width: 100%;
     }
