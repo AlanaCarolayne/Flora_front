@@ -3,7 +3,7 @@ let reconnectInterval = 5000; // Tempo para tentar reconectar (3 segundos)
 
 // Função para criar e conectar WebSocket
 const connectWebSocket = ()=> {
-    ws = new WebSocket("wss://flora-tvxk.onrender.com");
+    ws = new WebSocket("wss://flora-server-xc1t.onrender.com");
 
     // Evento quando a conexão for aberta
     ws.onopen = () => {
