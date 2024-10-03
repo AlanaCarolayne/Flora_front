@@ -53,6 +53,7 @@
 .btn-icon-left,
 .btn-icon-right {
   display: flex;
+  margin-inline: 1rem;
   background-color: transparent;
   border: none;
   font-size: 1.5rem;
@@ -65,11 +66,22 @@
   color: var(--cor-principal);
 }
 
+@media (min-width: 2560px) {
+.main-rank{
+  margin-inline: 30rem;
+}
+}
 /* Ajustes responsivos */
-@media (max-width: 768px) {
+
+
+@media (min-width: 768px) {
   .main-rank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
     margin: 0;
-    padding: 1rem;
+    
   }
   .rank-header {
     flex-direction: column;

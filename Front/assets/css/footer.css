@@ -5,7 +5,6 @@
 }
 
 .footer-div {
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,20 +15,22 @@
   font-size: 1rem;
   text-align: center;
 }
-.footer-mobile{
-  position: fixed; 
-  bottom: 0; 
-  left: 0; 
-  width: 100%; 
-  background-color: var(--background-color); 
-  border-top: var(--border); 
-  padding: .5rem; 
-  z-index: 1000; 
-  text-align: center; 
+
+.footer-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-color);
+  border-top: var(--border);
+  padding: .5rem;
+  z-index: 1000;
+  text-align: center;
   margin: auto;
   display: none;
 }
-.footer-mobile ul{
+
+.footer-mobile ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -37,27 +38,45 @@
   gap: 4rem;
 }
 
-.footer-mobile a{
- text-decoration: none;
- color: var(--cor-principal);
- transition: color.5s ease;
+.footer-mobile a {
+  text-decoration: none;
+  color: var(--cor-principal);
+  transition: color 0.5s ease;
 }
-.footer-mobile a:hover{
+
+.footer-mobile a:hover {
   color: var(--cor-destaque);
 }
-.icon-footer{
+
+.icon-footer {
   font-size: 1.7rem;
 }
 
-@media (max-width: 48rem) {
-.footer-div{
-  display: none;
-}
-.footer-mobile{
- display: block;
+@media  (min-width: 2560px) {
+  .footer-div {
+    margin-left: 10rem;
+  }
 
+  .footer-text {
+    font-size: 1.2rem; 
+  }
+
+  .icon-footer {
+    font-size: 2rem; 
+  }
 }
-.footer-mobile li a i{
-  font-size: 1.3rem;
-}
+
+/* Responsividade para tablets e dispositivos médios (até 768px) */
+@media (max-width: 48rem) {
+  .footer-div {
+    display: none;
+  }
+
+  .footer-mobile {
+    display: block;
+  }
+
+  .footer-mobile li a i {
+    font-size: 1.3rem;
+  }
 }

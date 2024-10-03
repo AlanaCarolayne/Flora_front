@@ -4,7 +4,7 @@
     --cor-principal: #D72C5C;
     --cor-destaque: #68182E;
     --background-color: #ffeff8;
-    --border: solid .5px #80808031;
+    --border: solid .5px #5a575741;
 }
 *{
     font-family: var(--fonte-principal);
@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 17rem; 
-    padding-top: 6rem; 
+    padding-top: 9rem; 
     padding-right: 2rem; 
     
 }

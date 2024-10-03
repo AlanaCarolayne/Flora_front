@@ -10,7 +10,8 @@
     width: 45%;
     display: flex;              
     flex-direction: column;     
-    align-items: center;         
+    align-items: center;  
+  margin: auto;     
     text-align: center;     
 padding: 2rem;
 }
@@ -73,7 +74,32 @@ padding: 2rem;
   .perfil-btn:hover {
     background-color: #d32f2f;
   }
-     /*-------------  */
+   
+  @media (min-width: 2560px) {
+    .main-perfil {
+        gap: 2rem; 
+        padding-inline: 5rem;
+    }
+
+    .perfil-list {
+    
+        padding-inline-start: 10rem;
+        margin: auto;
+     
+    }
+
+    .perfil-header h3 {
+        font-size: 2rem; 
+    }
+
+    .perfil-header h4 {
+        font-size: 1.2rem;
+    }
+
+    .img-small {
+        width: 13rem;
+    }
+}
      
 @media (max-width: 768px) {
     .main-perfil {
@@ -93,7 +119,7 @@ padding: 2rem;
     }
 
     .perfil-header {
-        flex-direction: column; 
+        flex-direction: row; 
         gap: 1rem;
         padding: 2rem;
     }
@@ -111,13 +137,15 @@ padding: 2rem;
 @media (max-width: 480px) {
     .perfil-div {
         flex-direction: row; 
-        flex-wrap: wrap; 
+        flex-wrap: nowrap; 
         gap: 0.5rem; 
     }
 
     .perfil-header {
         flex-direction: row;
         align-items: center;
+        
+        flex-wrap: nowrap;
         justify-content: space-between;
         gap: 0.5rem; 
     }
@@ -136,8 +164,3 @@ padding: 2rem;
     }
 }
 
-@media (max-width: 480px) {
-    .perfil-div {
-        flex-direction: column; 
-    }
-}

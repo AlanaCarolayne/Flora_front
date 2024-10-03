@@ -43,10 +43,11 @@
   margin: auto;
   border-radius: 1rem 0 0 1rem;
   
-  width: 90%;
+  width: 100%;
 }
 .header-form {
   margin-right: auto;
+  width: 20%;
 }
 .header-user-btn {
   position: relative;
@@ -105,6 +106,33 @@
 }
 
 /* Responsividade */
+
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .header {
+    padding: 1rem 3rem; 
+  }
+
+  .div-header {
+    gap: 8rem; 
+  }
+
+  .header-logo {
+    width: 7rem; 
+    margin-left: 6rem;
+  }
+
+  .header-search {
+    width: 80%; 
+  }
+
+  .header-user-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    right: 6rem;
+  }
+}
+
 @media (max-width: 64rem) {
   .div-header {
     gap: 2rem;
@@ -116,7 +144,9 @@
     justify-content: center;
     width: 5rem;
   }
-
+  .header-search {
+    width: 80%; 
+  }
   .header-search,
   .header-search-btn,
   .header-user-btn {
@@ -124,6 +154,7 @@
     padding: 0.3rem;
   }
 }
+
 
 @media (max-width: 48rem) {
   .header-search,

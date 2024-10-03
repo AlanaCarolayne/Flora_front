@@ -78,7 +78,10 @@
   background-color: var(--cor-principal);
   color: #000;
 }
-
+.post-btn-like{
+margin-inline-start: 3rem;
+margin-bottom: 1.5rem;
+}
 .post-btn-follow {
   justify-content: flex-end;
   margin-left: 20rem;
@@ -103,6 +106,7 @@
   padding: 1rem 0;
   font-size: 1.1rem;
   color: #555;
+  margin-inline-start: 3rem;
   line-height: 1.6;
 }
 
@@ -123,18 +127,6 @@
   border: 2px solid var(--cor-principal);
 }
 
-.show-comments-btn {
-  border: none;
-  color: var(--cor-destaque);
-  font-size: .8rem;
-  transition: color .3s ease;
-}
-
-.show-comments-btn:hover {
-  color: var(--cor-principal);
-  text-decoration: underline;
-}
-
 .comment-post {
   border-top: var(--border);
   display: flex;
@@ -150,11 +142,11 @@
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  /* display: none; */
 }
 
 .post-input-form input,
 .post-input-form button {
+  margin: auto;
   border: 1px solid #3b3b3b71;
   padding: 0.4rem;
   background-color: transparent;
@@ -199,14 +191,14 @@
   width: 3rem;
   height: 3rem;
   position: fixed; 
-    top: 35rem; 
+    top: 33rem; 
     right: 1rem; 
   z-index: 1000;
   display: none;  
 }
 
 
-@media (max-width: 64rem) {
+@media (min-width: 65rem) {
   .post-btn-follow {
     margin-left: 15rem;
   }
@@ -253,3 +245,52 @@
     }
   }
 
+  @media (min-width: 2560px) {
+    .posts {
+      width: 100%; 
+    margin-inline: 25rem;
+    
+      padding: 2.5rem; 
+    }
+  
+    .post {
+      max-width: 1200px; 
+      margin: 0 auto;
+      padding: 2rem;
+    }
+  
+    .post-header {
+      justify-content: space-between;
+      gap: 3.5rem; 
+    }
+  
+    .post-btns {
+      gap: 3rem; 
+    }
+  
+    .filter-div {
+      margin-right: 15rem;
+    }
+  
+    .post-btn-follow {
+      margin-left: 30rem; 
+    }
+  
+    .post-text {
+      font-size: 1.4rem; 
+      line-height: 1.8; 
+    }
+  
+    .post-input-form input {
+      width: 50%;
+    }
+  
+    .post-input-form button {
+      margin-inline-start: -17rem;
+    }
+  
+    .comment-post p {
+      margin-left: 5.5rem; 
+    }
+  }
+  
